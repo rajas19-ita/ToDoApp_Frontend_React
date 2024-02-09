@@ -32,8 +32,8 @@ function ToDoForm() {
             onSubmit={handleSubmit}
             className="w-full bg-[#4e5152] p-4 flex flex-col gap-2"
         >
-            <div className="flex justify-between items-center">
-                <div className="flex gap-4">
+            <div className="flex justify-between items-center sm:flex-col sm:gap-6">
+                <div className="flex gap-4 sm:flex-col">
                     <div className="flex flex-col gap-1">
                         <label htmlFor="name">Name</label>
                         <input
@@ -53,7 +53,7 @@ function ToDoForm() {
                             id="description"
                             onChange={handleDescChange}
                             value={description}
-                            className="rounded-lg p-2 text-black focus:outline-none focus:ring ring-[#d68f39]"
+                            className="rounded-lg p-2 text-black  focus:outline-none focus:ring ring-[#d68f39]"
                             autoComplete="off"
                             required
                         />

@@ -8,7 +8,7 @@ function Button({ type, children, isLoading, onClick: handleClick }) {
         case "submit":
             className = `transition-all ease-out active:scale-95 rounded-full 
             bg-[#d68f39] hover:bg-[#c18133] active:bg-[#c18133] font-medium h-12 w-32 
-            flex justify-center items-center `;
+            flex justify-center items-center sm:h-10 sm:w-28`;
             break;
         case "complete":
             className = `transition-all ease-out rounded-md bg-white text-green-600 border-2 
@@ -19,12 +19,12 @@ function Button({ type, children, isLoading, onClick: handleClick }) {
             className = `transition-all ease-out rounded-md bg-white
              text-red-500 border-2 active:scale-95
              border-red-500 font-medium h-10 w-10 flex 
-             justify-center items-center`;
+             justify-center items-center `;
             break;
         default:
             className = `transition-all ease-out active:scale-95 rounded-full 
             bg-[#d68f39] hover:bg-[#c18133] active:bg-[#c18133] font-medium h-12 w-32 
-            flex justify-center items-center `;
+            flex justify-center items-center sm:h-10 sm:w-28`;
     }
     return (
         <button
