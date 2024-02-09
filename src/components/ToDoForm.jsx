@@ -55,6 +55,7 @@ function ToDoForm() {
                             value={description}
                             className="rounded-lg p-2 text-black focus:outline-none focus:ring ring-[#d68f39]"
                             autoComplete="off"
+                            required
                         />
                     </div>
                 </div>
